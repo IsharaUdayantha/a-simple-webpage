@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Snakes gurdians</title>
+        <style>
+            body{
+                background-image:url('snake.jpg');
+                }
+
+                
+            p,form{color: #fff;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 100;}
+
+            ul{list-style-type: none;
+                background-color: blueviolet;
+                margin: 0;
+                padding: 10px;
+                
+            }
+
+            li{display: inline;}
+
+            li a{padding: 10px;
+                color: #fff;
+                text-decoration: none;
+                
+            }
+
+            .active{background-color: aqua;}
+
+            li a:hover {background-color: black;}
+           
+            h2::before{
+                content:'click here';
+                background-color: beige;
+                color: blue;
+                margin: 10px;
+              }
+        </style>
+        <script> 
+            function submitform(){
+                const form = document.getElementById("dataform");
+                alert("succesfully submited")}
+        </script>
+    </head>
+
+    <header>
+        <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">snakes</a></li>
+        <li><a href="#">donations</a></li>
+        <li><a href="#">other animals</a></li>
+       </ul>
+    </header>
+
+    <body> 
+        <h2><a href="#">Snakes in srilanka </a></h2>
+        <p>our main perpus is <strong>Protect snakes</strong>  and <br> 
+            sharing the knowledge we know about the snakes are encounted in our everyday environment</p>
+        <p>suport me to get an idea about users who uses my page</p> 
+        <form id="dataform">
+            <lable for="fname">First name</lable>
+            <input type="text" id="fname" name="fn"><br>
+            <lable for="lname">Last name</lable>
+            <input type="text" id="lname" name="ln"><br><br>
+
+            <lable for="Gender">Gender</lable><br>
+            <input type="radio" id="Ml" name="rg" value="male">
+            <lable for="male">Male</lable><br>
+            <input type="radio" id="fml" name="rg" value="female">
+            <lable for="female">Female</lable><br><br>
+
+            <label for="age">Age</label><br>
+            <input type="checkbox" id="b30" name="cb[]" value="b30">
+            <label for="b30">Below 30</label><br>
+            <input type="checkbox" id="a30" name="cb[]" value="a30">
+            <label for="a30">Above 30</label><br><br>
+             
+            <button onclick="submitform()">submit</button>
+        </form>
+        
+       
+    
+
+
+    
+    
+    </body>
+</html>
